@@ -23,7 +23,6 @@ This project uses the [MNIST Database of Handwritten Digits](http://yann.lecun.c
 
 **NOTE:** You need to run every command of this recipe in the `SVM-Recognition` root path:
 > ```bash
-> mkdir build
 > cd build
 > cmake ..
 > ```
