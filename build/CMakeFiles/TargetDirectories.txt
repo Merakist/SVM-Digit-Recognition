@@ -1,0 +1,3 @@
+/Users/meraki/Documents/CS/C++/Proj_DigitReg/SVM-Recognition/build/CMakeFiles/SVM-Based-Digit-Recognition.dir
+/Users/meraki/Documents/CS/C++/Proj_DigitReg/SVM-Recognition/build/CMakeFiles/edit_cache.dir
+/Users/meraki/Documents/CS/C++/Proj_DigitReg/SVM-Recognition/build/CMakeFiles/rebuild_cache.dir
