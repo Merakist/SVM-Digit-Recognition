@@ -8,9 +8,9 @@ This project uses the [MNIST Database of Handwritten Digits](http://yann.lecun.c
 
 1. Visit the [official OpenCV website](https://opencv.org/get-started/) and install OpenCV.
 
-2. Clone this Repository (SVM-Recognition)
+2. Clone this Repository (SVM-Recognition).
 
-3. Download MNIST Data and put the data files under `SVM-Recognition/MNIST_Data`
+3. Download MNIST Data and put the data files under `SVM-Recognition/MNIST_Data`.
 
 > ```bash
 > t10k-images.idx3-ubyte
@@ -19,7 +19,7 @@ This project uses the [MNIST Database of Handwritten Digits](http://yann.lecun.c
 > train-labels.idx1-ubyte
 > ```
 
-4. Input the following command in your command prompt to run
+4. Input the following command in your command prompt to run.
 
 **NOTE:** You need to run every command of this recipe in the `SVM-Recognition` root path:
 > ```bash
@@ -31,7 +31,7 @@ This project uses the [MNIST Database of Handwritten Digits](http://yann.lecun.c
 
 ## Pre-trained Model
 
-A pre-trained model is included: `/SVM-Recognition/build/mnist_svm.xml`
+A pre-trained model is included: `/SVM-Recognition/build/mnist_svm.xml` with accuracy 97.54%.
 
 ## Related Reading in Digit Recognition
 
