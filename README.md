@@ -6,12 +6,11 @@ This project uses the [MNIST Database of Handwritten Digits](http://yann.lecun.c
 
 ## Installation
 
-1. Visit the [official OpenCV website](https://opencv.org/get-started/) and download the latest
-version of the library compatible with your operating system.
+1. Visit the [official OpenCV website](https://opencv.org/get-started/) and install OpenCV.
 
 2. Clone this Repository (SVM-Recognition)
 
-3. Download MNIST Data and put the data files under `/SVM-Recognition`
+3. Download MNIST Data and put the data files under `SVM-Recognition/MNIST_Data`
 
 > ```bash
 > t10k-images.idx3-ubyte
