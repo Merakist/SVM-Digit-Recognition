@@ -48,6 +48,8 @@ The program will train a SVM model by the training data `train-images.idx3-ubyte
 
 To run predictions of an image of a digit, make sure the image conforms to the format in MNIST database, i.e., a 28*28 bmp image. The filename of the image does not matter. So long as the image is in the right format and is a .bmp file, the program will run a prediction. 
 
+- **Extracted MNIST Image by 3omar-mostafa**: [Github Repo](https://github.com/3omar-mostafa/MNIST-dataset-extractor)
+
 To start, put the image under `SVM-Recognition/data`. The program will only run predictions for the first occurrence of a .bmp file, so don't put more than one image.
 
 **NOTE:** You need to run every command of this recipe in the `SVM-Recognition` root path:
