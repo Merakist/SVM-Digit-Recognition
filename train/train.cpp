@@ -14,6 +14,18 @@ int main() {
     string train_labels_path = "../../data/train-labels.idx1-ubyte";
     Mat train_labels = read_mnist_label(train_labels_path);
     Mat train_images = read_mnist_image(train_images_path);
+
+    // Check if train_labels is empty
+    if (train_labels.empty()) {
+        cerr << "Error: train_labels is empty. Unable to read from " << train_labels_path << endl;
+        return -1;
+    }
+
+    // Check if train_images is empty
+    if (train_images.empty()) {
+        cerr << "Error: train_images is empty. Unable to read from " << train_images_path << endl;
+        return -1;
+    }
     train_images = train_images / 255.0;  // Normalize
 
     // Create and train SVM
@@ -34,6 +46,17 @@ int main() {
     string test_labels_path = "../../data/t10k-labels.idx1-ubyte";
     Mat test_labels = read_mnist_label(test_labels_path);
     Mat test_images = read_mnist_image(test_images_path);
+
+    if (test_labels.empty()) {
+        cerr << "Error: test_labels is empty. Unable to read from " << test_labels_path << endl;
+        return -1;
+    }
+
+    // Check if train_images is empty
+    if (test_images.empty()) {
+        cerr << "Error: test_images is empty. Unable to read from " << test_images_path << endl;
+        return -1;
+    }
     test_images = test_images / 255.0;  // Normalize
 
     // Predict using SVM

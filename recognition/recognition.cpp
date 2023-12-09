@@ -32,7 +32,7 @@ int main()
     // Attempt to Load SVM Model
     Ptr<SVM> svm;
     try {
-        svm = StatModel::load<SVM>("../mnist_svm.xml");
+        svm = StatModel::load<SVM>("../train/mnist_svm.xml");
     } catch (const cv::Exception& e) {
         cerr << "Error loading model: " << e.what() << endl;
         return -1;
