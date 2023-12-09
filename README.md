@@ -29,7 +29,7 @@ This project uses the [MNIST Database of Handwritten Digits](http://yann.lecun.c
 
 ## Usage
 
-### Train
+### 1. Train
 
 To train a SVM model, run the following command.
 
@@ -44,7 +44,7 @@ To train a SVM model, run the following command.
 The program will train a SVM model by the training data `train-images.idx3-ubyte` and `train-labels.idx1-ubyte`, and will calculate the accuracy by `t10k-images.idx3-ubyte` and `t10k-labels.idx1-ubyte`.
 
 
-### Recognition
+### 2. Recognition
 
 To run predictions of an image of a digit, make sure the image conforms to the format in MNIST database, i.e., a 28*28 bmp image. The filename of the image does not matter. So long as the image is in the right format and is a .bmp file, the program will run a prediction. 
 
