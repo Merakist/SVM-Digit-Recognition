@@ -117,65 +117,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named SVM-Based-Digit-Recognition
+# Target rules for targets named train
 
 # Build rule for target.
-SVM-Based-Digit-Recognition: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SVM-Based-Digit-Recognition
-.PHONY : SVM-Based-Digit-Recognition
+train: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 train
+.PHONY : train
 
 # fast build rule for target.
-SVM-Based-Digit-Recognition/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SVM-Based-Digit-Recognition.dir/build.make CMakeFiles/SVM-Based-Digit-Recognition.dir/build
-.PHONY : SVM-Based-Digit-Recognition/fast
+train/fast:
+	$(MAKE) $(MAKESILENT) -f train/CMakeFiles/train.dir/build.make train/CMakeFiles/train.dir/build
+.PHONY : train/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+#=============================================================================
+# Target rules for targets named recognition
 
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SVM-Based-Digit-Recognition.dir/build.make CMakeFiles/SVM-Based-Digit-Recognition.dir/main.cpp.o
-.PHONY : main.cpp.o
+# Build rule for target.
+recognition: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 recognition
+.PHONY : recognition
 
-main.i: main.cpp.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SVM-Based-Digit-Recognition.dir/build.make CMakeFiles/SVM-Based-Digit-Recognition.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SVM-Based-Digit-Recognition.dir/build.make CMakeFiles/SVM-Based-Digit-Recognition.dir/main.cpp.s
-.PHONY : main.cpp.s
-
-mnist_reader.o: mnist_reader.cpp.o
-.PHONY : mnist_reader.o
-
-# target to build an object file
-mnist_reader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SVM-Based-Digit-Recognition.dir/build.make CMakeFiles/SVM-Based-Digit-Recognition.dir/mnist_reader.cpp.o
-.PHONY : mnist_reader.cpp.o
-
-mnist_reader.i: mnist_reader.cpp.i
-.PHONY : mnist_reader.i
-
-# target to preprocess a source file
-mnist_reader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SVM-Based-Digit-Recognition.dir/build.make CMakeFiles/SVM-Based-Digit-Recognition.dir/mnist_reader.cpp.i
-.PHONY : mnist_reader.cpp.i
-
-mnist_reader.s: mnist_reader.cpp.s
-.PHONY : mnist_reader.s
-
-# target to generate assembly for a file
-mnist_reader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SVM-Based-Digit-Recognition.dir/build.make CMakeFiles/SVM-Based-Digit-Recognition.dir/mnist_reader.cpp.s
-.PHONY : mnist_reader.cpp.s
+# fast build rule for target.
+recognition/fast:
+	$(MAKE) $(MAKESILENT) -f recognition/CMakeFiles/recognition.dir/build.make recognition/CMakeFiles/recognition.dir/build
+.PHONY : recognition/fast
 
 # Help Target
 help:
@@ -185,13 +150,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... SVM-Based-Digit-Recognition"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... mnist_reader.o"
-	@echo "... mnist_reader.i"
-	@echo "... mnist_reader.s"
+	@echo "... recognition"
+	@echo "... train"
 .PHONY : help
 
 

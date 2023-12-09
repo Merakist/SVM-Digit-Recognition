@@ -1,5 +1,4 @@
 cmake_minimum_required(VERSION 3.10)
 project(SVM-Based-Digit-Recognition)
-find_package(OpenCV REQUIRED)
-add_executable(SVM-Based-Digit-Recognition main.cpp mnist_reader.h mnist_reader.cpp)
-target_link_libraries(SVM-Based-Digit-Recognition ${OpenCV_LIBS})
+add_subdirectory(train)
+add_subdirectory(recognition)

@@ -10,7 +10,7 @@ This project uses the [MNIST Database of Handwritten Digits](http://yann.lecun.c
 
 2. Clone this Repository (SVM-Recognition).
 
-3. Download MNIST Data and put the data files under `SVM-Recognition/MNIST_Data`.
+3. Download MNIST Data and put the data files under `SVM-Recognition/data`.
 
 > ```bash
 > t10k-images.idx3-ubyte
@@ -25,9 +25,41 @@ This project uses the [MNIST Database of Handwritten Digits](http://yann.lecun.c
 > ```bash
 > cd build
 > cmake ..
-> make
-> ./SVM-Recognition
 > ```
+
+## Usage
+
+### Train
+
+To train a SVM model, run the following command.
+
+**NOTE:** You need to run every command of this recipe in the `SVM-Recognition` root path:
+> ```bash
+> cd build
+> make train
+> cd train
+> ./train
+> ```
+
+The program will train a SVM model by the training data `train-images.idx3-ubyte` and `train-labels.idx1-ubyte`, and will calculate the accuracy by `t10k-images.idx3-ubyte` and `t10k-labels.idx1-ubyte`.
+
+
+### Recognition
+
+To run predictions of an image of a digit, make sure the image conforms to the format in MNIST database, i.e., a 28*28 bmp image. The filename of the image does not matter. So long as the image is in the right format and is a .bmp file, the program will run a prediction. 
+
+To start, put the image under `SVM-Recognition/data`. The program will only run predictions for the first occurrence of a .bmp file, so don't put more than one image.
+
+**NOTE:** You need to run every command of this recipe in the `SVM-Recognition` root path:
+> ```bash
+> cd build
+> make recognition
+> cd recognition
+> ./recognition
+> ```
+
+The program will then print the prediction of the image.
+
 
 ## Pre-trained Model
 
