@@ -29,12 +29,19 @@ int main() {
     train_images = train_images / 255.0;  // Normalize
 
     // Create and train SVM
+    // Ptr<SVM> svm = SVM::create();
+    // svm->setType(SVM::C_SVC);
+    // svm->setKernel(SVM::POLY);
+    // svm->setGamma(0.05);
+    // svm->setDegree(3.0);
+    // svm->setTermCriteria(TermCriteria(TermCriteria::MAX_ITER | TermCriteria::EPS, 500, 0.0001));
+
     Ptr<SVM> svm = SVM::create();
     svm->setType(SVM::C_SVC);
-    svm->setKernel(SVM::POLY);
-    svm->setGamma(3.0);
-    svm->setDegree(3.0);
-    svm->setTermCriteria(TermCriteria(TermCriteria::MAX_ITER | TermCriteria::EPS, 300, 0.0001));
+    svm->setKernel(SVM::RBF);
+    svm->setC(5);
+    svm->setGamma(0.05);
+
 
     Ptr<TrainData> train_data = TrainData::create(train_images, ROW_SAMPLE, train_labels);
     cout << "Training SVM..." << endl;
